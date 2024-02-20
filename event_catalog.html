@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gray: '#F5F5F5',
+			blue: '#1F6AFB'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-[200vh]">
+
+  <div class="grid gap-y-[24px] mx-auto w-11/12">
+    <div class="flex"></div>
+    <div class="flex justify-between">
+        <div class="w-[48px] h-[48px] rounded-full  bg-black px-[15px] py-[15px]">
+            <img src="img/search.svg" alt="search" class="w-full">
+        </div>
+        <div class="bg-gray px-3 py-[4px] flex rounded-full">
+            <img src="../img/Logo.svg" class="w-full my-auto" alt="BoonStud">
+        </div>
+        <div class="flex">
+            <img src="../img/people.svg" class="w-full my-auto" alt="BoonStud">
+        </div>
+    </div>
+    <h1 class="text-[28px] font-[600]">Мероприятия</h1>
+    <div class="grid gap-y-[16px]">
+        <a href="event_active.html">
+            <div class="grid gap-y-[4px]">
+                <div class="bg-[url('/img/tolpa.png')] bg-no-repeat bg-cover h-[170px] w-full rounded-[20px]"></div>
+                <div class="w-[calc(11/12*100vw)] h-[170px] bg-black opacity-50 rounded-[20px] absolute mt-[0px]"></div>
+                <h1 class="text-white text-[16px] font-[600] absolute mt-[36%] ml-4">Сила первых</h1>
+                <div class="rounded-full px-2 py-1 bg-gray w-max absolute mt-[2%] ml-4">6 сентября</div>
+                <p class="text-[12px] font-[500] text-blue text-end"><span class="bg-black text-white px-2 py-1 rounded-full">763 чел.</span> идут на событие</p>
+            </div>
+        </a>
+        <a href="event_active.html">
+            <div class="grid gap-y-[4px]">
+                <div class="bg-[url('/img/dabro.png')] bg-no-repeat bg-cover h-[170px] w-full rounded-[20px]"></div>
+                <div class="w-[calc(11/12*100vw)] h-[170px] bg-black opacity-50 rounded-[20px] absolute mt-[0px]"></div>
+                <h1 class="text-white text-[16px] font-[600] absolute mt-[36%] ml-4">Концерт группы Dabro</h1>
+                <div class="rounded-full px-2 py-1 bg-gray w-max absolute mt-[2%] ml-4">7 сентября</div>
+                <p class="text-[12px] font-[500] text-blue text-end"><span class="bg-black text-white px-2 py-1 rounded-full">763 чел.</span> идут на событие</p>
+            </div>
+        </a>
+        <a href="event_active">
+            <div class="grid gap-y-[4px]">
+                <div class="bg-[url('/img/peak.png')] bg-no-repeat bg-cover h-[170px] w-full rounded-[20px]"></div>
+                <div class="w-[calc(11/12*100vw)] h-[170px] bg-black opacity-50 rounded-[20px] absolute mt-[0px]"></div>
+                <h1 class="text-white text-[16px] font-[600] absolute mt-[36%] ml-4">Хакатон PeakIT</h1>
+                <div class="rounded-full px-2 py-1 bg-gray w-max absolute mt-[2%] ml-4">8 сентября</div>
+                <p class="text-[12px] font-[500] text-blue text-end"><span class="bg-black text-white px-2 py-1 rounded-full">763 чел.</span> идут на событие</p>
+            </div>
+        </a>
+    </div>
+    <div class="">
+        
+    </div>
+    
+  </div>
+
+  <!-- navbar -->
+  <div class="h-[95px] py-4 px-6 w-full bg-[#101323] fixed top-[calc(100vh-95px)] rounded-t-[20px] flex justify-between">
+    <a href="main.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full w-[48px] h-[48px] flex mx-auto">
+            <img src="img/home.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Главная</p>
+    </div>
+    </a>
+    <a href="unions.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full  w-[48px] h-[48px] flex mx-auto">
+            <img src="img/union.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Объединения</p>
+    </div>
+    </a>
+    <a href="event_catalog.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full bg-blue w-[48px] h-[48px] flex mx-auto">
+            <img src="img/afisha.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Мероприятия</p>
+    </div>
+    </a>
+    <a href="calendar.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full w-[48px] h-[48px] flex mx-auto">
+            <img src="img/calendar.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Расписание</p>
+    </div>
+    </a>
+  </div>
+</body>
+</html>
+

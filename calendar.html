@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gray: '#F5F5F5',
+			blue: '#1F6AFB'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="h-[200vh]">
+
+  <div class="grid gap-y-[24px] mx-auto w-11/12">
+    <div class="flex"></div>
+    <div class="flex justify-between">
+        <div class="w-[48px] h-[48px] rounded-full  bg-black px-[15px] py-[15px]">
+            <img src="img/search.svg" alt="search" class="w-full">
+        </div>
+        <div class="bg-gray px-3 py-[4px] flex rounded-full">
+            <img src="../img/Logo.svg" class="w-full my-auto" alt="BoonStud">
+        </div>
+        <div class="flex">
+            <img src="../img/people.svg" class="w-full my-auto" alt="BoonStud">
+        </div>
+    </div>
+    <h1 class="text-[28px] font-[600]">Мероприятия</h1>
+    <div class="grid gap-y-[16px]">
+        
+<button id="dropdownDefaultButton" data-dropdown-toggle="dropdown" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+    </svg>
+    </button>
+    
+    <!-- Dropdown menu -->
+    <div id="dropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+          </li>
+        </ul>
+    </div>
+    
+    </div>
+    <div class="">
+        
+    </div>
+    
+  </div>
+
+  <!-- navbar -->
+  <div class="h-[95px] py-4 px-6 w-full bg-[#101323] fixed top-[calc(100vh-95px)] rounded-t-[20px] flex justify-between">
+    <a href="main.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full w-[48px] h-[48px] flex mx-auto">
+            <img src="img/home.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Главная</p>
+    </div>
+    </a>
+    <a href="unions.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full  w-[48px] h-[48px] flex mx-auto">
+            <img src="img/union.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Объединения</p>
+    </div>
+    </a>
+    <a href="event_catalog.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full w-[48px] h-[48px] flex mx-auto">
+            <img src="img/afisha.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Мероприятия</p>
+    </div>
+    </a>
+    <a href="calendar.html">
+    <div class="grid gap-y-[4px] text-center text-white font-[500] text-[9px] w-16">
+        <div class="rounded-full bg-blue w-[48px] h-[48px] flex mx-auto">
+            <img src="img/calendar.svg" class="w-1/2 mx-auto my-auto" alt="home">
+        </div>
+        <p>Расписание</p>
+    </div>
+    </a>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
+
