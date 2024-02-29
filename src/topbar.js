@@ -1,5 +1,4 @@
-
-
+import { Link } from "react-router-dom";
 
 function Topbar(props) {
     return (
@@ -10,9 +9,11 @@ function Topbar(props) {
               <div className="bg-gray px-3 py-[4px] flex rounded-full">
                   <img src="../img/Logo.svg" className="w-full my-auto" alt="BoonStud"/>
               </div>
-              <div className="flex">
-                  <img src="../img/people.svg" className="w-full my-auto" alt="BoonStud"/>
-              </div>
+              <Link to={process.env.PUBLIC_URL+"/auth"}>
+                <div className="flex">
+                    <img src="../img/people.svg" className="w-full my-auto" alt="BoonStud"/>
+                </div>
+              </Link>
           </div>
     );
   }
