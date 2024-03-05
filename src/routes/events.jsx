@@ -5,10 +5,10 @@ export default function Events() {
       <>
         <div className="grid gap-y-[24px] mx-auto w-11/12">
             <div className="flex"></div>
-            <h1 class="text-[28px] font-[600]">
+            <h1 className="text-[28px] font-[600]">
                 Студенческие объединения
             </h1>
-            <div class="grid gap-y-[8px]">
+            <div className="grid gap-y-[8px]">
                 <Concert concert_img="/img/tolpa.png" concert_date="6.09.2024" concert_name="Сила первых" concert_peoples="763" concert_redirect="1"/>
                 <Concert concert_img="/img/dabro.png" concert_date="6.09.2024" concert_name="Сила первых" concert_peoples="215" concert_redirect="2"/>
                 <Concert concert_img="/img/peak.png" concert_date="6.09.2024" concert_name="Сила первых" concert_peoples="652" concert_redirect="3"/>
